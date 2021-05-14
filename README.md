@@ -1,5 +1,7 @@
 # mern-auth-heroku
 
+## 👉 [View Demo](https://mern-auth-heroku-demo.herokuapp.com/)
+
 A MERN app boilerplate with authentication built for all-in-one deployment on Heroku.
 
 Frontend client uses React which includes:
