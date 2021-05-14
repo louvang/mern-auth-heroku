@@ -50,6 +50,8 @@ Authentication is checked using a higher-order component located in `/src/compon
 
 # Heroku Deployment
 
+## Option 1: Heroku Git (Heroku CLI)
+
 You want to deploy the entire project so ensure that file changes and Terminal commands are for the project directory (which includes the `client` directory). We don't want to make these deployment preperations in the client directory.
 
 1. In `/package.json`, ensure that you have your engines defined to your node and npm version. Also make sure you have your `start` script defined.
@@ -74,11 +76,25 @@ You want to deploy the entire project so ensure that file changes and Terminal c
 9. Finally, you will deploy your application with `git push heroku master`.
 10. It will take a few minutes for your application to deploy but once that is completed, you can use `heroku open` to open your application in your browser.
 
-Your app should now be deployed on Heroku and complete! If you want to make further changes to your app, you can create subsequent deployments on Heroku just like you would commit and push your code to a repo:
+Your app should now be deployed on Heroku and complete!
+
+## Option 2: Github
+
+Alternatively, you can push your application on GitHub and then connect your Heroku application to your Github account.
+
+1. Simply create a new application and its name on Heroku and then select "GitHub" as your deployment method.
+2. Click the `Enable Automatic Deploys` button if you want your application to be updated whenever you push updates to your repo on Github.
+3. You'll be asked to connect to your GitHub account if you haven't already and then to select which repo and which branch to deploy.
+4. Click on the `Deploy Branch` button and after a few minutes, your application should be deployed.
+
+## Updating Your App
+
+If you want to make further changes to your app, you can create subsequent deployments on Heroku just like you would commit and push your code to a repo:
 
 1. `git add .`
 2. `git commit -m "comment"`
-3. `git push heroku master`
+3. If deployed via Heroku Git: `git push heroku master`.
+   -- If deployed via GitHub, push your updates as normal: `git push`
 
 # Resources
 
