@@ -1,0 +1,111 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans',
+    'Droid Sans', 'Helvetica Neue', sans-serif;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+
+.red {
+  color: red;
+  font-weight: 700;
+  width: 100%;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: lavender;
+  padding: 1rem;
+
+  .logo-container {
+    font-weight: 700;
+    font-size: 1.75rem;
+  }
+}
+
+.content-container {
+  margin: 1rem;
+  text-align: center;
+
+  p {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 500px;
+    line-height: 150%;
+  }
+}
+
+.landing-container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .auth-landing {
+    h1 {
+      margin-top: 0;
+      text-align: center;
+    }
+
+    .login-error {
+      text-align: center;
+      margin-bottom: 1rem;
+    }
+
+    .label-container {
+      font-size: 0.875rem;
+      margin-bottom: 3px;
+      width: 100%;
+      max-width: 275px;
+
+      ul {
+        margin: 0 0 0.25rem;
+        padding: 0 0 0 1rem;
+      }
+    }
+
+    .input-container {
+      width: 250px;
+      margin-bottom: 0.75rem;
+
+      input {
+        width: 100%;
+        height: 30px;
+        padding-left: 8px;
+        padding-right: 8px;
+        border: 1px solid #333;
+        border-radius: 3px;
+        font-size: 1rem;
+      }
+    }
+
+    .button-container {
+      width: 270px;
+
+      button {
+        width: 100%;
+      }
+    }
+  }
+}
+
+button {
+  background-color: mediumpurple;
+  font-size: 1rem;
+  color: #fff;
+  padding-left: 8px;
+  padding-right: 8px;
+  height: 34px;
+  border: 0;
+  border-radius: 3px;
+}
+
+button:hover {
+  background-color: indigo;
+  cursor: pointer;
+  transition: 0.2s;
+}
