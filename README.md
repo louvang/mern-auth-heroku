@@ -20,7 +20,7 @@ Backend client uses Express which includes:
 
 # How To Use
 
-After cloning the repo, make sure you have the required modules by running `npm install` in both the project directory AND the _/client_ directory.
+[Download the code](https://github.com/louvang/mern-auth-heroku/archive/refs/heads/master.zip). After unzipping the file, you'll need to navigate to the project directory on your Terminal and run `npm install`. You will then need to run `npm install` again in the _/client/_ directory.
 
 ## Set up your .env
 
