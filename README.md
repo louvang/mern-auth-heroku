@@ -12,7 +12,7 @@ Frontend client uses React which includes:
 - Dashboard page (private route)
 - Sass for styling
 
-Backend client uses Express which includes:
+Backend server uses Express which includes:
 
 - MongoDB connection, Mongoose model for user (name, email, password, date created)
 - Authentication with [passport-local](http://www.passportjs.org/packages/passport-local/)

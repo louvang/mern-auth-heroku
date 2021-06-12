@@ -1,4 +1,4 @@
-const { register_get, register_post, login_post, current_user_get, logout_get } = require('../controllers/auth');
+const { register_post, login_post, current_user_get, logout_get } = require('../controllers/auth');
 
 module.exports = (app) => {
   app.post('/api/register', register_post);
